@@ -1,0 +1,70 @@
+::selection {
+    background-color: grey;
+    color: #FFCC01;
+}
+input:focus {
+    outline: none;
+    caret-color: #FFCC01;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus, 
+.navbar .navbar-nav .nav-link:hover {
+    color: #92770d;
+    background-color: #f2ff00; 
+}
+.image-building {
+    background-image: url(/imgs/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+@media (max-width: 767px) {
+    .formation {
+        flex-direction: column;
+    }
+    .formation input[type="search"] {
+        width: 100%;
+    }
+    .formation > .searching {
+        top: 30px;    
+    }
+    .formation button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .image-building > .images {
+        flex-direction: column;
+    }
+}
+.sword-arrow {
+    animation: up-down 1s infinite;
+    -webkit-animation: up-down 1s infinite;
+}
+@keyframes up-down {
+    0%, 100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+}
+}
+.works .card {
+    transition: 0.3s;
+}
+.works .card:hover {
+    background-color: #FFCC01;
+}
+.adds .build-holder {
+    /* background-image: url('/imgs/add3.png');;
+    background-size: cover;
+    min-height: 40vh;
+    width: 40%; */
+}
